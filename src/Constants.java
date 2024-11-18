@@ -11,6 +11,8 @@ public class Constants {
     public static final double DELTANGLE = 0.1;
     public static final double ACC = 0.2;
     public static final double PLAYER_MAX_VEL= 7.0;
+    public static final long FLICKER_TIME = 200;
+	public static final long SPAWNING_TIME = 3000;
 
     //velocidad del laser
 
@@ -19,5 +21,6 @@ public class Constants {
     //propiedades del meteoro
 
     public static final double METEOR_VEL = 2.0;
+    public static final int METEOR_SCORE = 20;
 
 }

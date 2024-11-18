@@ -8,9 +8,7 @@ import javax.swing.JFrame;
 
 public class Window extends JFrame implements Runnable{
 	
-	/**
-	 * 
-	 */
+    
 	private static final long serialVersionUID = 1L;
 	
 	private Canvas canvas;
