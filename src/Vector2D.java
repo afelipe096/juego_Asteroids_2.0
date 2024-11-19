@@ -1,3 +1,5 @@
+
+
 public class Vector2D {
 	private double x,y;
 	
@@ -54,6 +56,10 @@ public class Vector2D {
 		double magnitude = getMagnitude();
 		
 		return new Vector2D(Math.cos(angle)*magnitude, Math.sin(angle)*magnitude);
+	}
+	
+	public double getAngle() {
+		return Math.asin(y/getMagnitude());
 	}
 	
 	public double getX() {

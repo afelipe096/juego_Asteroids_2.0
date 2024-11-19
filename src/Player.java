@@ -114,8 +114,7 @@ public class Player extends MovingObject{
 		
 		angle = 0;
 		velocity = new Vector2D();
-		position = new Vector2D(Constants.WIDTH/2 - assets.player.getWidth()/2,
-				Constants.HEIGHT/2 - assets.player.getHeight()/2);
+		position = gameState.PLAYER_START_POSITION;
 	}
 	
 	@Override

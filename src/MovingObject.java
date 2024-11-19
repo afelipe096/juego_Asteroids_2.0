@@ -15,6 +15,7 @@ public abstract class MovingObject extends GameObjects{
 	protected int width;
 	protected int height;
 	protected gameState gameState;
+    protected boolean Dead;
 	
 	public MovingObject(Vector2D position, Vector2D velocity, double maxVel, BufferedImage texture, gameState gameState) {
 		super(position, texture);
@@ -24,6 +25,7 @@ public abstract class MovingObject extends GameObjects{
 		width = texture.getWidth();
 		height = texture.getHeight();
 		angle = 0;
+        Dead = false;
 		
 	}
 	
@@ -62,11 +64,13 @@ public abstract class MovingObject extends GameObjects{
 	
 	
 	protected void Destroy(){
-		gameState.getMovingObjects().remove(this);
+		Dead = true;
+		
 	}
 	
 	protected Vector2D getCenter(){
 		return new Vector2D(position.getX() + width/2, position.getY() + height/2);
 	}
 	
+	public boolean isDead() {return Dead;}
 }

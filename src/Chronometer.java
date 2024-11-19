@@ -1,29 +1,42 @@
 public class Chronometer {
     private long delta, lastTime;
-    private long  time ;
+    private long time;
     private boolean running;
 
-    public Chronometer(){
+    public Chronometer() {
         delta = 0;
-        lastTime = 0;
+        lastTime = System.currentTimeMillis();
         running = false;
     }
 
-    public void run (long time){
+    public void run(long time) {
         running = true;
         this.time = time;
     }
 
-    public void update (){
-        if (running) 
+    public void update() {
+        if (running) {
             delta += System.currentTimeMillis() - lastTime;
-        if (delta >= time) {
-            running = false;
-            delta = 0;
+            if (delta >= time) {
+                running = false;
+                delta = 0;
+            }
         }
-        lastTime = System.currentTimeMillis();       
+        lastTime = System.currentTimeMillis();
     }
-    public boolean isRunning(){
+
+    public boolean isRunning() {
         return running;
-    } 
+    }
+    public void stop() {
+        running = false;
+        delta = 0;
+    }
+    
+
+    public boolean isFinished() {
+        return !running && delta == 0; // Si no está corriendo y el delta fue reiniciado, está terminado
+    }
+    
+    
 }

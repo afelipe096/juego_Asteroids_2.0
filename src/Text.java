@@ -4,6 +4,7 @@ import java.awt.FontMetrics;
 import java.awt.Graphics;
 
 
+
 public class Text {
 	public static void drawText(Graphics g, String text, Vector2D pos, boolean center, Color color, Font font) {
 		g.setColor(color);
