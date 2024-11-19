@@ -17,7 +17,7 @@ public class keyBoard implements KeyListener {
         UP = key[KeyEvent.VK_UP];
         LEFT = key[KeyEvent.VK_LEFT];
         RIGHT = key[KeyEvent.VK_RIGHT];
-        SHOOT = key[KeyEvent.VK_P];
+        SHOOT = key[KeyEvent.VK_SPACE];
     }
 
     @Override

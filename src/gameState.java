@@ -67,7 +67,7 @@ public class gameState {
     private void startWave(){
 		
 		messages.add(new Message(new Vector2D(Constants.WIDTH/2, Constants.HEIGHT/2), false,
-				"WAVE "+waves, Color.WHITE, true, assets.fontBig, this));
+				"OLEADA "+waves, Color.WHITE, true, assets.fontBig, this));
 		
 		double x, y;
 		
@@ -117,8 +117,7 @@ public class gameState {
 
         drawScore(g);
         drawLives(g);
-        Text.drawText(g, "WAVE"+ waves,new Vector2D(Constants.WIDTH/2,Constants.HEIGHT/2),true, Color.WHITE, assets.fontBig);
-    }
+        }
 
 
     private void drawScore(Graphics g){

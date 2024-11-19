@@ -39,7 +39,7 @@ public class Message {
 		
 		Text.drawText(g2d, text, position, center, color, font);
 		
-		g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 1));
+		g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER,1));
 		
 		position.setY(position.getY() - 1);
 		

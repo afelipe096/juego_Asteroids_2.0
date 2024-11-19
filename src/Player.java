@@ -53,7 +53,7 @@ public class Player extends MovingObject{
 					heading,
 					Constants.LASER_VEL,
 					angle,
-					assets.bluLaser,
+					assets.redLaser,
 					gameState
 					));
 			fireRate.run(Constants.FIRERATE);

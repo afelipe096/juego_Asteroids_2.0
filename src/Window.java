@@ -8,7 +8,7 @@ import javax.swing.JFrame;
 
 public class Window extends JFrame implements Runnable{
 	
-    
+
 	private static final long serialVersionUID = 1L;
 	
 	private Canvas canvas;
@@ -81,7 +81,7 @@ public class Window extends JFrame implements Runnable{
 		
 		g.setColor(Color.WHITE);
 		
-		g.drawString(""+AVERAGEFPS, 10, 20);
+		//g.drawString(""+AVERAGEFPS, 10, 20);
 		
 		//---------------------
 		
